@@ -7,6 +7,56 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ListBox Name="ProductsListBox"
+                 Grid.Row="1"
+                 BorderBrush="{x:Null}"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 ScrollViewer.VerticalScrollBarVisibility="Hidden">
+            е
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Width="150"
+                            Height="150"
+                            CornerRadius="1"
+                            BorderThickness="1"
+                            BorderBrush="Gray">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Row="0"
+                                        Orientation="Vertical">
+                                <Grid Background="#EAEAF6"
+                                      Margin="10,10,10,0"
+                                      Width="90" Height="90"
+                                      HorizontalAlignment="Center">
+                                    <Image Source="Resources/green.jpg" Grid.ColumnSpan="20">
+                                    </Image>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                    </Grid>
+                                </Grid>
+                                <Label HorizontalAlignment="Center" 
+                                       FontSize="5"
+                                       Margin="0,-5">○⬤⬤⬤⬤</Label>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Vertical"
+                                        Grid.Row="1"
+                                        VerticalAlignment="Top"
+                                        HorizontalAlignment="Center">
+                                <Label Margin="0,-5,0,0">Название товара</Label>
+                                <Label Margin="0,-10,0,0" HorizontalAlignment="Center">900 руб</Label>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
