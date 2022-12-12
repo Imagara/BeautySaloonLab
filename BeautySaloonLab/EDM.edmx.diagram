@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fcf5d3c226be4661b963646092e769b6" Name="Diagram1">
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.additional_services" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.Customer" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.Department" Width="1.5" PointX="3" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.employees" Width="1.5" PointX="5.25" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.Employees_Services" Width="1.5" PointX="7.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.History_of_pay" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.Manufacturer" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.Product" Width="1.5" PointX="5.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.services" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.Services_Customers" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.Tag" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeautySaloonDatabaseModel.Topicality" Width="1.5" PointX="3" PointY="15.125" IsExpanded="true" />
+        <AssociationConnector Association="BeautySaloonDatabaseModel.FK_additional_services_services" ManuallyRouted="false" />
+        <AssociationConnector Association="BeautySaloonDatabaseModel.FK_Services_Customers_additional_services" ManuallyRouted="false" />
+        <AssociationConnector Association="BeautySaloonDatabaseModel.FK_Customer_Tag" ManuallyRouted="false" />
+        <AssociationConnector Association="BeautySaloonDatabaseModel.FK_Services_Customers_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="BeautySaloonDatabaseModel.FK_employees_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="BeautySaloonDatabaseModel.FK_Employees_Services_employees" ManuallyRouted="false" />
+        <AssociationConnector Association="BeautySaloonDatabaseModel.FK_Employees_Services_Services_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="BeautySaloonDatabaseModel.FK_History_of_pay_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="BeautySaloonDatabaseModel.FK_History_of_pay_Services_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="BeautySaloonDatabaseModel.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="BeautySaloonDatabaseModel.FK_Product_Topicality" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
